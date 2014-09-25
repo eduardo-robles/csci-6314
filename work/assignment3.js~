@@ -8,7 +8,7 @@
 /* variables */
    BegBal = 2000;
    interest = 0;
-   EndBal = BegBal;
+   endbal = BegBal;
    dep = 0;
 
 /* static information table */
@@ -34,8 +34,8 @@ for(age = 51; age <= 65; age++){
    
    for(m=0 ; m <12 ; m++)
    {
-	   	 EndBal = EndBal + interest + 100;
-		     interest = EndBal*(.12/12);
+	   	 endbal = endbal + interest + 100;
+		     interest = endbal*(.12/12);
 			 total_interest += interest;
 			dep+=100;
     }
@@ -48,9 +48,9 @@ document.writeln('<td class="right">'+age+'</td>');
 document.writeln('<td class="right">'+BegBal.toFixed(2)+'</td>');
 document.writeln('<td class="right">'+total_interest.toFixed(2)+'</td>');// interest
 document.writeln('<td class="center">'+dep.toFixed(2)+'</td>');// deposit every month
-document.writeln('<td class="right">'+EndBal.toFixed(2)+'</td>');// end balance
+document.writeln('<td class="right">'+endbal.toFixed(2)+'</td>');// end balance
 document.writeln('</tr>');
-BegBal = EndBal;// copy EndBal to the next year
+BegBal = endbal;// copy EndBal to the next year
 
 }//end for loop
 document.writeln( '</table>' );//end table
