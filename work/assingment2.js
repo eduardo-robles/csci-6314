@@ -12,7 +12,7 @@ dimeR = 5;
 nickelR = 2;
 
 /*User Prompt*/
-dollar = window.prompt('Please enter a whole dollar amount:')
+dollar = window.prompt('Please enter a whole dollar amount:');
 
 
 /*Logic*/
@@ -31,8 +31,8 @@ b = z % nickelR;
 pennyR = parseInt(b) * 2;
   
 /*Output*/
-document.write('Amount Entered: ' + dollar + '<br />')
-document.write('Quater Rolls:' + parseInt(qrt) + '<br />')
-document.write('Dime Rolls:' + parseInt(y) + '<br />')
-document.write('Nickel Rolls:' + parseInt(b)+ '<br />')
-document.write('Penny Rolls:'  + parseInt(pennyR) + '<br />')
+document.write('Amount Entered: ' + dollar + '<br />');
+document.write('Quater Rolls:' + parseInt(qrt) + '<br />');
+document.write('Dime Rolls:' + parseInt(y) + '<br />');
+document.write('Nickel Rolls:' + parseInt(b)+ '<br />');
+document.write('Penny Rolls:'  + parseInt(pennyR) + '<br />');
